@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.CSS" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">City Name</h1>
+            <p class="weather-app">
+              <span id="time"></span>, <span id="description"></span> <br />
+
+              <br />
+              Humidity:
+              <strong><span id="humidity">--%</span></strong
+              >, Wind:
+              <strong><span id="wind">--km/h</span></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon" id="icon"></div>
+            <div class="weather-app-temperature" id="temperature-main"></div>
+            <div class="weather-app-unit">&deg;C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Apelele05" target="_blank">Apelele Kufa</a>,
+        code hosted
+        <a href="https://github.com/Apelele05/Skywatcher/" target="_blank"
+          >on Github</a
+        >
+        and website hosted
+        <a
+          href="https://main--skywatcher-shecodes-app.netlify.app/"
+          target="_blank"
+          >on netlify</a
+        >
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

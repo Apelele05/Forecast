@@ -1,0 +1,125 @@
+body {
+  background: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: blueviolet;
+}
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+header {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.search-form-button {
+  background-color: blueviolet;
+  padding: 10px 15px;
+  border: none;
+  font-size: 14px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.weather-app-details {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0, 4);
+  line-height: 20px;
+}
+
+.weather-app-details strong {
+  color: red;
+  font-weight: 200;
+}
+
+.weather-app-temperature-container {
+  display: flex;
+}
+
+.weather-app-icon {
+  width: 85px;
+  height: 85px;
+}
+
+.weather-app-temperature {
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 7px;
+}
+
+.weather-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0, 4);
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.weather-forecast-temperatures {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: red;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
+}
+
+footer {
+  border-top: 1px solid #f5f5f5;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0, 6);
+  text-align: center;
+  font-size: 13px;
+}
